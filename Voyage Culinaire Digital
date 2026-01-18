@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Culin’Art Travel – Aux Saveurs d’ici & Délices d’ailleurs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    /* HERO */
+    .hero {
+      height: 95vh;
+      background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+      url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe") center/cover;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      color: #8c1d18;
+      font-weight: 700;
+    }
+
+    .btn-afro {
+      background: #8c1d18;
+      color: white;
+    }
+
+    .btn-afro:hover {
+      background: #a32620;
+    }
+
+    .destination-card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    footer {
+      background: #212529;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-danger" href="#">Culin’Art Travel</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#concept">Concept</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#saveurs">Saveurs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Expériences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center text-white text-center">
+  <div class="container">
+    <h1>Voyage Interculturel du Goût</h1>
+    <p class="lead fs-4">🌍 Saveurs d’ici • ✈️ Délices d’ailleurs • 🍽️ Goût partagé</p>
+    <a href="#destinations" class="btn btn-afro btn-lg mt-3">Commencer le voyage</a>
+  </div>
+</section>
+
+<!-- CONCEPT -->
+<section id="concept" class="py-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">🌐 Le Concept</h2>
+    <p class="fs-5">
+      <strong>Culin’Art Travel</strong> est une plateforme immersive où chaque destination
+      se découvre par sa gastronomie, son histoire, ses rituels culinaires
+      et ses expériences sensorielles partagées.
+    </p>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">✈️ Destinations & Cultures</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+          <div class="card-body text-center">
+            <h5>Paris</h5>
+            <p>Gastronomie raffinée & traditions françaises</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
+          <div class="card-body text-center">
+            <h5>Dakar</h5>
+            <p>Saveurs africaines & culture du partage</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2">
+          <div class="card-body text-center">
+            <h5>Bali</h5>
+            <p>Épices, rituels et cuisine spirituelle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAVEURS -->
+<section id="saveurs" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">🍲 Saveurs & Plats Emblématiques</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1604908554020-00f2c91c19ed" class="card-img-top">
+          <div class="card-body">
+            <h5>Thiéboudienne Fusion</h5>
+            <p>Un plat Sénégalais revisité pour le monde</p>
+            <button class="btn btn-afro w-100" onclick="vote()">Voter</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1625943592406-56f5fd82f8ae" class="card-img-top">
+          <div class="card-body">
+            <h5>Yassa Nomade</h5>
+            <p>Citron africain & techniques modernes</p>
+            <button class="btn btn-afro w-100" onclick="vote()">Voter</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b" class="card-img-top">
+          <div class="card-body">
+            <h5>Mafé Vegan Global</h5>
+            <p>Tradition africaine & alimentation durable</p>
+            <button class="btn btn-afro w-100" onclick="vote()">Voter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center fw-bold mt-4">❤️ Votes : <span id="votes">0</span></p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">🎯 Expérience Immersive</h2>
+
+    <div class="card p-4">
+      <p class="fs-5">
+        Imaginez un voyage où chaque plat raconte une histoire,
+        chaque bouchée rapproche les cultures.
+      </p>
+      <button class="btn btn-afro" onclick="assistant()">Suggestion d’expérience</button>
+      <p id="assistantText" class="mt-3 text-muted"></p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">📩 Contact & Réservation</h2>
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input class="form-control" placeholder="Nom">
+      </div>
+      <div class="col-md-6">
+        <input class="form-control" placeholder="Email">
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Votre projet de voyage culinaire"></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-afro btn-lg">Envoyer</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+  © 2026 Culin’Art Travel – 🌍 Voyager par le goût • 🍽️ Partager par la culture
+</footer>
+
+<script>
+  let votes = 0;
+
+  function vote() {
+    votes++;
+    document.getElementById("votes").innerText = votes;
+    alert("Merci de partager cette saveur !");
+  }
+
+  function assistant() {
+    const ideas = [
+      "Dîner interculturel avec narration culinaire",
+      "Atelier cuisine locale avec un chef du pays",
+      "Voyage gastronomique immersif en réalité virtuelle",
+      "Expérience dégustation + musique traditionnelle"
+    ];
+    document.getElementById("assistantText").innerText =
+      ideas[Math.floor(Math.random() * ideas.length)];
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
